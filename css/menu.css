@@ -57,8 +57,10 @@ footer section{
 
 /* @media (max-width: 700px) { */
     h1{
+        font-family: Lobster Two;
         font-size: 75px;
         text-align: center;
+        padding: 15px;
     }
     header nav img {
         display: inline-block;
