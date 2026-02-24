@@ -1,0 +1,132 @@
+@font-face{
+    font-family: 'Lobster Two';
+    src: url(/assets/fonts/LobsterTwo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #46380d;
+}
+
+header{
+    background-color: #f2aa00;
+    display: flex;
+    padding: 20px;
+    padding-right: 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+header img[src="/assets/img/logo.png"]{
+    width: 100px;
+}
+header nav img{
+    width: 40px;
+    vertical-align: middle;
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    padding: 20px;
+}
+section p{
+    padding-top: 10px;
+}
+button{
+    background-color: #f2aa00;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #f2aa00;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+footer section{
+    width: 33%;
+}
+
+/* @media (max-width: 700px) { */
+    h1{
+        font-size: 75px;
+        text-align: center;
+    }
+    header nav img {
+        display: inline-block;
+    }
+
+    header nav div {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 90px; 
+        background-color: #f2aa00;
+        width: 200px;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 999; 
+        font-size: 20px;
+    }
+    header nav div a {
+        display: block;
+        margin: 10px 0;
+    }
+    header nav div.show {
+        display: block;
+    }
+/* } */
+
+@media (min-width: 700px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .platos p{
+        margin-bottom: 10px;
+    }
+    button{
+        font-weight: bold;
+        font-size: 15px;
+        padding: 15px 25px;
+        border-radius:5px;
+    }
+}
+
+@media (min-width: 1200px){
+    h2{
+        font-size: 35;
+    }
+    h3{
+        font-size: 30px;
+    }
+    main section.platos{
+        display: inline-block;
+        width: 40%;
+        margin: 40px;
+    }
+    .platos img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .platos p{
+        margin-bottom: 10px;
+    }
+    button{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 20px 35px;
+        border-radius: 10px;
+    }
+    
+}
