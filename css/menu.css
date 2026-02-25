@@ -33,9 +33,28 @@ main{
 }
 section{
     padding: 20px;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 section p{
     padding-top: 10px;
+}
+.plato{
+    width: 300px;
+    background-color: #fcc84f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.plato img{
+    width: 260px;
+    padding: 15px;
+    border-radius: 30px;
+}
+.descripcio{
+    display: none;
 }
 button{
     background-color: #f2aa00;
