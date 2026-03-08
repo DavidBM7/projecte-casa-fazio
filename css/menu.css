@@ -25,7 +25,7 @@ header img[src="/assets/img/logo.png"]{
 header nav img{
     width: 40px;
     vertical-align: middle;
-    display: none;
+    
 }
 main{
     display: flex;
@@ -33,7 +33,6 @@ main{
 }
 section{
     padding: 20px;
-    border: solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,49 +68,62 @@ footer{
     display: flex;
     padding: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 footer section{
-    width: 33%;
+    width: 100%;
 }
-
-/* @media (max-width: 700px) { */
-    h1{
-        font-family: Lobster Two;
-        font-size: 75px;
-        text-align: center;
-        padding: 15px;
-    }
-    header nav img {
-        display: inline-block;
-    }
-
+h1{
+    font-family: Lobster Two;
+    font-size: 75px;
+    text-align: center;
+    padding: 15px;
+}
     header nav div {
         display: none;
         position: absolute;
+        align-items: center;
         right: 20px;
         top: 90px; 
         background-color: #f2aa00;
-        width: 200px;
+        width: 250px;
         padding: 15px;
         border-radius: 5px;
         z-index: 999; 
         font-size: 20px;
     }
-    header nav div a {
-        display: block;
-        margin: 10px 0;
-    }
-    header nav div.show {
-        display: block;
-    }
-/* } */
 
+    header nav div a {
+        display: flex;
+        padding: 20px;
+    }
+    
+    header nav div.show {
+        text-align: center;
+        display: block;
+    }
+    #bebidas {
+        background-color: #fcc84f;
+        border-radius: 10px;
+        padding: 30px;
+        width: 80%; 
+        margin: 40px auto; 
+    }
+    hr {
+        border: none;
+        border-top: 3px dotted #f2aa00;
+        width: 85%;
+        margin: 30px auto;
+    }
+    h2{
+        font-size: 30px;
+    }
 @media (min-width: 700px){
     h2{
         font-size: 30px;
     }
     h3{
-        font-size: 25px;
+        font-size: 30px;
     }
     .platos p{
         margin-bottom: 10px;
@@ -122,14 +134,73 @@ footer section{
         padding: 15px 25px;
         border-radius:5px;
     }
+    header nav div {
+        width: 400px;
+    }
+    .plato{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plato img{
+        width: 400px;
+    }
+    .descripcio{
+        display: block;
+        padding: 10px;
+        padding-left: 45px;
+    }
+    .plato p{
+        font-size: 24px;
+    }
+    #bebidas p{
+        font-size: 18px;
+    }
+    footer section{
+        width: 33%;
+    }
+    #bebida{
+        width: 40%;
+    }
 }
 
 @media (min-width: 1200px){
+
+    header nav img#menu {
+        display: none;
+    }
+    
+    header nav div#menu-links {
+        display: flex !important; 
+        position: static;         
+        width: auto;               
+        background-color: transparent; 
+        padding: 0;
+        flex-direction: row;      
+    }
+
+    header nav div#menu-links a {
+        padding: 10px 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    header nav div#menu-links a:hover {
+        text-decoration: underline;
+    }
+
+    h1{
+        font-size: 100px;
+    }
     h2{
-        font-size: 35;
+        font-size: 50px;
+        width: 100%;       
+        text-align: center;
+        margin-bottom: 20px;
     }
     h3{
-        font-size: 30px;
+        font-size: 40px;
     }
     main section.platos{
         display: inline-block;
@@ -138,16 +209,46 @@ footer section{
     }
     .platos img{
         width: 100%;
-        border-radius: 8px;
+        
+        height: auto;
     }
     .platos p{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     button{
         font-weight: bold;
         font-size: 20px;
         padding: 20px 35px;
         border-radius: 10px;
+    }
+    .plato{
+        width: calc(40% - 40px); 
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section {
+        width: 100%;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav div { 
+        width: 50%;
+    }
+    .plato p{
+        font-size: 24px;
+    }
+    #bebidas p{
+        font-size: 18px;
+        
+    }
+    #bebidas{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        width: 30%;
     }
     
 }
