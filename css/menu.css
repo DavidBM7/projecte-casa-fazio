@@ -93,7 +93,7 @@ h1{
         font-size: 20px;
     }
 
-    header nav div a {
+    header nav div p {
         display: flex;
         padding: 20px;
     }
@@ -180,13 +180,13 @@ h1{
         flex-direction: row;      
     }
 
-    header nav div#menu-links a {
+    header nav div#menu-links p {
         padding: 10px 20px;
         font-weight: bold;
         text-decoration: none;
     }
     
-    header nav div#menu-links a:hover {
+    header nav div#menu-links p:hover {
         text-decoration: underline;
     }
 
