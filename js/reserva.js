@@ -195,10 +195,10 @@ function processarReserva() {
         hora: hora.value,
         persones: nPersones.value
     };
-    let llistaReserves = JSON.parse(localStorage.getItem("reserves"));
-    llistaReserves.push(reserva);
+    let reserves = JSON.parse(localStorage.getItem("reserves"));
+    reserves.push(reserva);
 
-    localStorage.setItem("reserves", JSON.stringify(llistaReserves));
+    localStorage.setItem("reserves", JSON.stringify(reserves));
 
     let resum = `Confirmacio de la reserva:
     Nom: ${reserva.nom}
